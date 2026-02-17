@@ -1,0 +1,26 @@
+# функція, що додає континенти до тих країн, які відсутні в таблиці з континентами
+def set_continent(country):
+  if country in ["Côte D'Ivoire", 'Congo (Democratic Republic Of The)', 'Congo', 'Falkland Islands (Islas Malvinas)',
+        'French Southern And Antarctic Lands', 'Gambia', 'Guinea Bissau', 'Swaziland', 'Mayotte', 'Reunion',
+          'Sao Tome And Principe']:
+    return 'Africa'
+  elif country in ['Antigua And Barbuda', 'Bahamas', 'Curaçao','Guadeloupe',
+       'Bonaire, Saint Eustatius And Saba', 'Greenland', 'Martinique',
+       'Saint Barthélemy', 'Saint Kitts And Nevis',
+       'Saint Pierre And Miquelon', 'Saint Vincent And The Grenadines',
+       'Trinidad And Tobago', 'Turks And Caicas Islands',
+       'United States', 'Virgin Islands']:
+    return 'North America'
+  elif country in ['Åland', 'Bosnia And Herzegovina', 'Macedonia', 'Isle Of Man', 'Svalbard And Jan Mayen']:
+    return 'Europe'
+  elif country in ['American Samoa', 'Baker Island',
+       'Federated States Of Micronesia', 'French Polynesia', 'Kingman Reef',
+       'Niue',  'Palmyra Atoll']:
+    return 'Oceania'
+  elif country in ['Falkland Islands (Islas Malvinas)', 'French Guiana',
+       'South Georgia And The South Sandwich Isla']:
+    return 'South America'
+  elif country in ['Burma', 'China', 'Christmas Island', 'Gaza Strip', 'Timor Leste']:
+    return 'Asia'
+  elif country in ['French Southern And Antarctic Lands', 'Heard Island And Mcdonald Islands']:
+    return 'Antarctica'
